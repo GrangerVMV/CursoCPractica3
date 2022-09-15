@@ -26,6 +26,15 @@ namespace CursoCPractica3_Condicionales
             if (reserva == "Yes") // Si el If solo tiene 1 lin de código no hacen falta llaves
                 Console.WriteLine("Adelante, puedes pasar porque tienes reserva"); // Esta línea siempre va a pertenecer al If y la lee o no la lee dependiendo de si cumple la condición
                 Console.WriteLine("Disfruta de tu estacia"); // Esta línea no pertenece al If y por lo tanto el flujo de ejecución la lee siempre    
+
+
+            // Tercer ejemplo: Uso del Condicional If/Else sin llaves y con condición booleana
+
+            Console.WriteLine("Vamos a evaluar si puedes conducir vehículos");
+            bool carnet=false;
+            if (carnet) Console.WriteLine("Enhorabuena, puedes conducir vehículos");// Entra si la variables es true, no es necesario poner carnet==true
+            else Console.WriteLine("Lo siento, no puedes conducir vehículos");// Entra si la condición del if no se cumple. Si tuviera más de una línea habría que poner llaves
+
         }
     }
 }
