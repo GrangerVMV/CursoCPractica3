@@ -84,8 +84,15 @@ namespace CursoCPractica3_Condicionales
             {
                 float media = (parcial1 + parcial2 + parcial3) / 3;
                 Console.WriteLine($"Enhorabuena, tu nota media es {media}");
-            }                     
+            }
 
+            // Octavo ejemplo: Uso de Else if (condición que cd se cumple sale del flujo)
+            Console.WriteLine("Por favor introduce tu edad");
+            edad = int.Parse(Console.ReadLine());
+            if (edad < 18) Console.WriteLine("Eres un niño");
+            else if (edad <30) Console.WriteLine("Eres joven aún");
+            else if (edad < 60) Console.WriteLine("Eres maduro");
+            else Console.WriteLine("Debes cuidarte ya");
         }
     }
 }
