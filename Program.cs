@@ -71,6 +71,21 @@ namespace CursoCPractica3_Condicionales
                 if (compara == 0) Console.WriteLine("Enhorabuena, puedes conducir un vehículo");
                 else Console.WriteLine("Lo siento, no puedes conducir vehículos");
             }
+
+            // Séptimo ejemplo: Uso del Condicional If/Else con operador lógico ||
+            Console.WriteLine("Introduce la nota del primer parcial");
+            float parcial1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduce la nota del segundo parcial");
+            float parcial2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduce la nota del tercer parcial");
+            float parcial3 = int.Parse(Console.ReadLine());
+            if (parcial1 < 5 || parcial2 < 5 || parcial3 < 5) Console.WriteLine("Lo siento, tendrás que prsentarte en septiembre");
+            else
+            {
+                float media = (parcial1 + parcial2 + parcial3) / 3;
+                Console.WriteLine($"Enhorabuena, tu nota media es {media}");
+            }                     
+
         }
     }
 }
