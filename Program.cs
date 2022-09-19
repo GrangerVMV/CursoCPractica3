@@ -58,6 +58,19 @@ namespace CursoCPractica3_Condicionales
             if (edad >= 18 && carnet2=="Yes") Console.WriteLine("Enhorabuena, puedes conducir vehiculos");
             else Console.WriteLine("Lo siento no puedes conducir vehiculos");
 
+            // Sexto ejemplo: Uso de 2 Condicionales If/Else anidados (comparando cadenas texto)
+            Console.WriteLine("Vamos a evaluar si puedes conducir un vehiculo");
+            Console.WriteLine("Por favor, introduce tu edad");
+            edad = int.Parse(Console.ReadLine());
+            if (edad < 18) Console.WriteLine("Lo siento no puedes conducir vehiculos");
+            else 
+            {
+                Console.WriteLine("Por favor, indique si tiene carnet de conducir (Yes/No)");
+                carnet2 = Console.ReadLine();
+                int compara = String.Compare(carnet2, "Yes", true);
+                if (compara == 0) Console.WriteLine("Enhorabuena, puedes conducir un vehículo");
+                else Console.WriteLine("Lo siento, no puedes conducir vehículos");
+            }
         }
     }
 }
