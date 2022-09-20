@@ -94,6 +94,12 @@ namespace CursoCPractica3_Condicionales
             else if (edad < 60) Console.WriteLine("Eres maduro");
             else Console.WriteLine("Debes cuidarte ya");
 
+            /*Uso de Switch:
+             Evalua expresiones ctes tipo string, char o int (no admite operadores lógicos, etc)
+            La expresión para cada case debe ser única (no se puede repetir)
+            Cada case debe llevar un break
+            */
+            
             // Noveno ejemplo: Uso de Condicional Switch (expresión constante string) 
             Console.WriteLine("Por favor elija medio de transporte (coche/tren/avion)");
             string medioTransporte = Console.ReadLine();
@@ -113,6 +119,52 @@ namespace CursoCPractica3_Condicionales
                     break;
             }
 
+            // Decimo ejemplo: Uso de Condicional Switch (expresión constante int) 
+            Console.WriteLine("Introduce número de mes para el cálculo de la comisión");
+            int numMes = int.Parse(Console.ReadLine());
+            switch (numMes)
+            {
+                case 1:
+                    Console.WriteLine("El mes escogido es enero");
+                    break;
+                case 2:
+                    Console.WriteLine("El mes escogido es febrero");
+                    break;
+                case 3:
+                    Console.WriteLine("El mes escogido es marzo");
+                    break;
+                case 4:
+                    Console.WriteLine("El mes escogido es abril");
+                    break;
+                case 5:
+                    Console.WriteLine("El mes escogido es mayo");
+                    break;
+                case 6:
+                    Console.WriteLine("El mes escogido es junio");
+                    break;
+                case 7:
+                    Console.WriteLine("El mes escogido es julio");
+                    break;
+                case 8:
+                    Console.WriteLine("El mes escogido es agosto");
+                    break;
+                case 9:
+                    Console.WriteLine("El mes escogido es septiembre");
+                    break;
+                case 10:
+                    Console.WriteLine("El mes escogido es octubre");
+                    break;
+                case 11:
+                    Console.WriteLine("El mes escogido es noviembre");
+                    break;
+                case 12:
+                    Console.WriteLine("El mes escogido es diciembre");
+                    break;
+                default:
+                    Console.WriteLine("Número de mes incorrecto");
+                    break;                   
+            }
+            
         }
     }
 }
