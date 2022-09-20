@@ -93,6 +93,26 @@ namespace CursoCPractica3_Condicionales
             else if (edad <30) Console.WriteLine("Eres joven aún");
             else if (edad < 60) Console.WriteLine("Eres maduro");
             else Console.WriteLine("Debes cuidarte ya");
+
+            // Noveno ejemplo: Uso de Condicional Switch (expresión constante string) 
+            Console.WriteLine("Por favor elija medio de transporte (coche/tren/avion)");
+            string medioTransporte = Console.ReadLine();
+            switch (medioTransporte)
+            {
+                case "coche":
+                    Console.WriteLine("La velocidad media es de 100km/h");
+                    break;
+                case "tren":
+                    Console.WriteLine("La velocidad media es de 250km/h");
+                    break;
+                case "avion":
+                    Console.WriteLine("La velocidad media es de 600km/h");
+                    break;
+                default:
+                    Console.WriteLine("Medio de transporte no contemplado");
+                    break;
+            }
+
         }
     }
 }
